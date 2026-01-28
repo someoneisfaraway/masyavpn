@@ -1,0 +1,12 @@
+END USER LICENSE AGREEMENT
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
+
+1. LICENSE GRANT
+This End User License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and the Author of this Software for the software product identified above, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("Software Product").
+
+2. OWNERSHIP
+The Software Product is licensed, not sold.
+
+3. DISCLAIMER OF WARRANTY
+THE SOFTWARE PRODUCT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.

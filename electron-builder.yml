@@ -1,0 +1,27 @@
+appId: com.masyavpn.app
+productName: masyavpn
+directories:
+  buildResources: resources
+  output: release-new
+files:
+  - dist/**/*
+  - resources/bin/**/*
+
+extraResources:
+  - from: resources/bin
+    to: bin
+    filter:
+      - "**/*"
+win:
+  requestedExecutionLevel: requireAdministrator
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: resources/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: resources/icon.ico
+  uninstallerIcon: resources/icon.ico
+  license: eula.txt

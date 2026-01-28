@@ -1,0 +1,46 @@
+{
+  "name": "masyavpn",
+  "productName": "masyavpn",
+  "version": "1.0.1",
+  "description": "Synthwave VPN Client with V2Ray",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "npm run build && electron .",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vpn",
+    "v2ray",
+    "synthwave"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "default-gateway": "^7.2.2",
+    "electron-store": "^8.1.0",
+    "ip": "^2.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "socks": "^2.8.6"
+  },
+  "devDependencies": {
+    "@types/default-gateway": "^7.2.2",
+    "@types/ip": "^1.1.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^26.0.18",
+    "png-to-ico": "^3.0.1",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}
