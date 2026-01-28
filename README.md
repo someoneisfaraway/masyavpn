@@ -1,34 +1,41 @@
 # masyavpn
 
-Настольный VPN‑клиент для Windows на базе Electron/Vite.  
-Приложение позволяет подключаться к заранее настроенному VPN‑серверу и управлять соединением через удобный GUI.
+Synthwave‑стилевой VPN‑клиент для Windows на базе Electron, React и Vite.  
+Приложение работает с V2Ray и даёт удобный GUI для подключения к заранее настроенным VPN‑сервером/конфигам.
 
 ## Features
 
-- Один клик для подключения/отключения VPN.
-- Трей‑иконка и фоновый режим работы.
-- Автостарт вместе с системой (опционально).
-- Логи подключений для отладки.
-- Сборка отдельных установщиков для Windows.
+- Поддержка V2Ray‑подключений.
+- Управление VPN‑соединением через простой интерфейс.
+- Логи и базовая диагностика сети (через `default-gateway`, `ip` и т.п.).
+- Сборка установщика для Windows одним скриптом.
+- Современный стек: Electron 33, React 19, Vite 6, TypeScript.
 
 ## Tech stack
 
 - Electron
+- React + React DOM
 - Vite
 - TypeScript
-- Node.js
+- Axios, electron-store, socks и др.
 
-## Getting started (development)
+## Scripts
 
-### Prerequisites
-
-- Node.js 18+
-- npm или pnpm/yarn
-
-### Installation
+Все команды запускаются из корня проекта.
 
 ```bash
-git clone https://github.com/someoneisfaraway/masyavpn.git
-cd masyavpn
-npm install
+# режим разработки (Vite dev server + Electron)
 npm run dev
+
+# сборка production-бандла
+npm run build
+
+# запуск приложения из собранной версии
+npm start
+
+# сборка дистрибутива (установщик)
+npm run dist        # все платформы, если настроено
+npm run dist:win    # сборка только под Windows
+
+# локальный предпросмотр статического бандла
+npm run preview
