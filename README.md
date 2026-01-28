@@ -19,6 +19,12 @@ Synthwave‑стилевой VPN‑клиент для Windows на базе Ele
 - TypeScript
 - Axios, electron-store, socks и др.
 
+## Screenshots
+
+### Main window
+
+![masyavpn main window](resources/ui-main.png)
+
 ## Scripts
 
 Все команды запускаются из корня проекта.
