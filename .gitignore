@@ -1,16 +1,18 @@
+# dependencies
+/node_modules/
+
 # Node / Vite / Electron
 node_modules/
 dist/
 build-cache/
 
-# Electron / release artifacts
-release/
-release-new/
-win-unpacked/
-**/win-unpacked/
-*.exe
-*.msi
-*.asar
+# build
+/dist/
+/build-cache/
+/release/
+/release-new/
+/win-unpacked/
+/**/win-unpacked/
 
 # Logs
 *.log
@@ -18,3 +20,6 @@ npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
+# misc
+.DS_Store
+Thumbs.db
